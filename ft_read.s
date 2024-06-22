@@ -13,7 +13,7 @@ ft_read:
 	cmovg rax, r8
 	neg rax
 	mov rcx, rax
-	call __errno_location
+	call __errno_location wrt ..plt
 	mov [rax], rcx
 	mov rax, rbx
 	ret

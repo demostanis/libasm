@@ -1,7 +1,7 @@
 AR = ar rcs
 AS = nasm
 ASFLAGS = -felf64
-CFLAGS = -Wall -Wextra -Werror -g -no-pie
+CFLAGS = -Wall -Wextra -Werror
 
 NAME = libasm.a
 
