@@ -16,5 +16,7 @@ ft_read:
 	call __errno_location wrt ..plt
 	mov [rax], rcx
 	mov rax, rbx
+	mov r8, -1
+	cmp rax, r8
+	cmovl rax, r8
 	ret
-

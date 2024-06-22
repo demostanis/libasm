@@ -36,7 +36,7 @@ void	test_write(void)
 	ssize_t	n;
 
 	n = ft_write(13, "Hello, world!\n", 15);
-	assert(n < 0);
+	assert(n == -1);
 	assert(errno != 0);
 	n = ft_write(1, "Hello, world!\n", 15);
 	assert(n == 15);
@@ -55,7 +55,7 @@ void	test_read(void)
 	assert(errno == 0);
 	assert(ft_strcmp(buf, "root:x:0:0:root:/root:/usr/bin/zsh") == 0);
 	n = ft_read(69, buf, sizeof buf);
-	assert(n < 0);
+	assert(n == -1);
 	assert(errno != 0);
 }
 
