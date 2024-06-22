@@ -3,7 +3,7 @@ global ft_strcpy
 section .text
 
 ft_strcpy:
-	mov r15, rax
+	mov r15, rdi
 	mov rax, rdi
 _l1:
 	mov al, [rsi]
